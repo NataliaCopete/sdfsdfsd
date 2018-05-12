@@ -1,0 +1,7 @@
+grafica.png grafica1.png:datos.txt
+	python caos.py
+datos.txt:
+	c++ caos.cpp
+	./a.out>datos.txt
+
+
