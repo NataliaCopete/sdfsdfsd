@@ -50,6 +50,8 @@ double kp14;
 double *vect;
 double *vect1;
 double *vect2;
+double *vect3;
+ double *vect4;
 double t1=0;
 double kq21;
 double kq22;
@@ -121,10 +123,12 @@ cont=cont+1;
 
 }
 
-for  (int
 for (int i=0;i<Npuntos;i++){
+if(vect[i]*vect[i+1]<0){
+cout<<vect3[i]<<" "<<vect4[i]<<endl;
 
-cout<<vect[i]<<" "<<vect2[i]<<" "<<vect1[i]<<endl;
 }
+ }
+
 return 0;
 }
